@@ -31,4 +31,8 @@ st.names <- c('GOOG', 'MSFT', 'META')
 
 rownames(stocks.matrix) <- st.names
 
+# delete a row
+W
+stocks.matrix <- stocks.matrix[-c(3),]
+
 stocks.matrix
