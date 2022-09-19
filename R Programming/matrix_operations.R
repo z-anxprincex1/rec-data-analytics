@@ -35,4 +35,10 @@ rownames(stocks.matrix) <- st.names
 
 stocks.matrix <- stocks.matrix[-c(3),]
 
+row.Mean <- rowMeans(stocks.matrix)
+
+stocks.matrix <- cbind(stocks.matrix, row.Mean)
+
+colnames(stocks.matrix) <- c('SAT', 'SUN', 'MON', 'MEAN')
+
 stocks.matrix
